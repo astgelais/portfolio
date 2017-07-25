@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        html,
+        body,
+        #map-container {
+            height: 100%;
+            margin: 0rem;
+        }
+        
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <script>
+        var stores = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-104.98171, 39.744517]
+                },
+                "properties": {
+                    "phoneFormatted": "(202) 234-7336",
+                    "phone": "2022347336",
+                    "address": "1471 P St NW",
+                    "city": "Washington DC",
+                    "country": "United States",
+                    "crossStreet": "at 15th St NW",
+                    "postalCode": "20005",
+                    "state": "D.C."
+                }
+            }]
+        }
+
+        ;
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXN0Z2VsYWlzIiwiYSI6ImNqNWFnYTUzajA3aGQyd21tcHppcjFtOG0ifQ.FEjqHBimivVN_W-YSD2HJg';
+        // This adds the map to your page
+        var map = new mapboxgl.Map({
+            // container id specified in the HTML
+            container: 'map',
+            // style URL
+            style: 'mapbox://styles/mapbox/light-v9',
+            // initial position in [lon, lat] format
+            center: [-104.98171, 39.744517],
+            // initial zoom
+            zoom: 13
+        });
+        map.on('load', function(e) {
+            // Add the data to your map as a layer
+            map.addLayer({
+                id: 'locations',
+                type: 'symbol',
+                // Add a GeoJSON source containing place coordinates and information.
+                source: {
+                    type: 'geojson',
+                    data: stores
+                },
+                layout: {
+                    'icon-image': 'star-15',
+                    'icon-allow-overlap': true,
+                    'icon-size': 2,
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

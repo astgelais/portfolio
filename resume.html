@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .thumbnail img {
+            padding: 10px;
+        }
+        
+        .ratings {
+            padding-right: 10px;
+            padding-left: 10px;
+            color: #d17581;
+        }
+        
+        .thumbnail {
+            padding: 0;
+            border: 1px solid #ffffff;
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+            background-color: rgba(255, 255, 255, .1);
+        }
+        
+        .thumbnail .caption-full {
+            padding: 9px;
+            color: #333;
+        }
+        
+        .list-group-item {
+            background-color: rgba(255, 255, 255, .1);
+            border: 1px solid rgba(255, 255, 255, .1);
+        }
+        
+        .list-group-item.active {
+            color: black;
+            background-color: white;
+            border-color: white;
+        }
+        
+        .thumbnail .caption-full {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse bg-inverse fixed-top" style="padding: 0rem 1rem;border-bottom: .1rem solid white;">
+        <button class="navbar-toggler navbar-toggler-right" style="height: 100%;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Aaron St Gelais
+            <small style="display:block; font-size: 60%; font-weight: 300;">Online Marketing & Development</small>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/astgelais" target="_BLANK">GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div class="container-fluid">
+        <h1>Resume</h1>
+        <hr>
+
+        <div class="row">
+
+            <div id="leftResumeColumn" class="col-lg-4">
+                <div style="margin-bottom: 10px">
+                    <a href="https://www.linkedin.com/in/aaronstgelais/" target="_BLANK" class='btn btn-md btn-primary'>LinkedIn »</a>
+                    <a href='./resume.pdf' target="_BLANK" class='btn btn-md btn-primary'>Resume PDF »</a>
+                </div>
+            </div>
+
+            <div id="rightResumeColumn" class="col-lg-8">
+
+                <!--
+                <div class="thumbnail">
+                    <div class="text-center">
+                        <img class="img-responsive" src="https://www.goinflow.com/wp-content/themes/inflow2016/img/inflow-logo.png" alt="">
+                    </div>
+                    <div class="caption-full">
+                        <h4 class="pull-right">2016 - Present</h4>
+                        <h4><a href="https://www.goinflow.com">Inflow</a>
+                        </h4>
+                        <li>Responsible for managing Pay Per Click strategies for clients and tracking Google Analytics Goals through Google Tag Manager.</li>
+                        <li>Integrated applications (Airtable, Zapier, Slack, etc.) using their APIs and a custom PHP script to complete process improvements for the company.</li>
+                        <li>Worked with Google Apps Script to create two projects in Sheets. Created a SEO tool to find website cruft. Created internal email alerts for client managers in order to maintain budgets and hit certain KPIs.</li>
+                    </div>
+                </div>
+                -->
+            </div>
+
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- collection/detail JS -->
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+        var jobs = [{
+            "companyName": "Inflow",
+            "logo": "./images/inflow_logo.png",
+            "backgroundColor": "darkblue",
+            "url": "https://www.goinflow.com",
+            "location": "Denver, CO",
+            "address": "./inflow_map.html",
+            "position": "Paid Search Strategist",
+            "duration": "August 2016-Present",
+            "bullets": [
+                "Responsible for managing Pay Per Click strategies for clients and tracking Google Analytics Goals through Google Tag Manager.",
+                "Integrated applications (Airtable, Zapier, Slack, etc.) using their APIs and a custom PHP script to complete process improvements for the company.",
+                "Worked with Google Apps Script to create two projects in Sheets. Created a SEO tool to find website cruft. Created internal email alerts for client managers in order to maintain budgets and hit certain KPIs."
+            ]
+        }, {
+            "companyName": "LinkConnector",
+            "logo": "./images/linkconnector_logo.svg",
+            "backgroundColor": "white",
+            "url": "https://www.linkconnector.com",
+            "location": "Denver, CO",
+            "address": "./linkconnector_map.html",
+            "position": "Programmer",
+            "duration": "Full Time: November 2014 - Aug 2016 | Contractor: August 2016 - Present",
+            "bullets": [
+                "Designed, developed, and documented application coding and MySQL tables based on system design specications.",
+                "Served as the primary point of contact for merchant IT requests and created online tools for all departments using MySQL and PHP.",
+                "Developed LinkConnector’s JavaScript conversion tracking code. Integrated this code into many platforms (Magento, Shopify, CAKE, HasOffers, etc.).",
+                "Developed LinkConnector’s WooCommerce and WP eCommerce WordPress tracking plugins."
+            ]
+        }, {
+            "companyName": "Boss Hippo | Digital Marketing",
+            "logo": "./images/bosshippo_logo.jpg",
+            "backgroundColor": "white",
+            "url": "https://www.bosshippo.com",
+            "location": "Denver, CO",
+            "address": "./bosshippo_map.html",
+            "position": "Owner",
+            "duration": "January 2008 - January 2016",
+            "bullets": [
+                "Owner, manager, and developer for aliate marketing sites. Websites were typically built with WordPress Divi Theme or my own framework.",
+                "Responsible for driving and tracking trac to merchants’ websites through SEM channels, SEO, and Social Media.",
+                "Consulted with Color Vu, Inc. on SEO & SEM to increase online presence and was responsible for WordPress website maintenance."
+            ]
+        }, {
+            "companyName": "LinkConnector",
+            "logo": "./images/linkconnector_logo.svg",
+            "backgroundColor": "white",
+            "url": "https://www.linkconnector.com",
+            "location": "Raleigh, NC",
+            "address": "./linkconnector_map.html",
+            "position": "Merchant Relations Representative",
+            "duration": "June 2012 - November 2014",
+            "bullets": [
+                "Responsible for setup, management, and growth of merchant campaigns. Answered tech questions about LinkConnector’s system.",
+                "Managed SEM/PPC marketing for merchants that requested the service",
+                "Automated the creation process of marketing documents using Excel, MySQL, HTML, and PHP."
+            ]
+        }, {
+            "companyName": "La Fuente Imports",
+            "logo": "./images/lafuente_logo.gif",
+            "backgroundColor": "white",
+            "url": "https://www.lafuente.com",
+            "location": "Colorado Springs, CO",
+            "address": "./lafuente_map.html",
+            "position": "IT Intern",
+            "duration": "June 2010 - December 2010",
+            "bullets": [
+                "Worked with the senior programmer to increase online presence through content building, SEO, and SEM."
+            ]
+        }];
+
+        function renderCollectionViewItem() {
+            $leftResumeColumnDiv = $("#leftResumeColumn");
+            $collectionDiv = $("<div>");
+            $collectionDiv.addClass('list-group');
+            $leftResumeColumnDiv.append($collectionDiv);
+            for (i = 0; i < jobs.length; i++) {
+                var companyName = jobs[i].companyName;
+                $collectionAnchor = $("<a>");
+                $collectionAnchor.addClass("list-group-item");
+                //$collectionAnchor.attr("href", jobs[i].url);
+                $collectionAnchor.attr("href", "#");
+                $collectionAnchor.attr("id", i);
+                if (i == 0) {
+                    $collectionAnchor.addClass("active");
+                }
+                $collectionAnchor.text(companyName);
+                $collectionAnchor.click(function(e) {
+                    var elementID = e.target.id;
+                    $("#rightResumeColumn").empty();
+                    $(".list-group-item").removeClass("active");
+                    $("#" + elementID).addClass("active");
+                    renderDetailViewItem(elementID);
+                });
+                $collectionDiv.append($collectionAnchor);
+            }
+        }
+        renderCollectionViewItem();
+
+        function renderDetailViewItem(id) {
+            //grab the right column
+            $rightResumeColumnDiv = $("#rightResumeColumn");
+
+            //create the thumbnail div - this will contain all the detail view items
+            $detailThumbnailDiv = $("<div>");
+            $detailThumbnailDiv.addClass('thumbnail');
+
+            //create the img
+            $detailThumbnailImgDiv = $("<div>");
+            $detailThumbnailImgDiv.addClass("text-center");
+            $detailThumbnailImgDiv.css("background-color", jobs[id].backgroundColor);
+            //$detailThumbnailImgDiv.css("height", "125px");
+            $detailThumbnailImg = $("<img>");
+            $detailThumbnailImg.addClass("img-responsive");
+            $detailThumbnailImg.css("max-height", "125px");
+            $detailThumbnailImg.attr("src", jobs[id].logo);
+            $detailThumbnailImgDiv.append($detailThumbnailImg);
+            $detailThumbnailDiv.append($detailThumbnailImgDiv);
+            $rightResumeColumnDiv.append($detailThumbnailDiv);
+
+            //create the companyName and duration line
+            $detailCaption = $("<div>");
+            $detailCaption.addClass("caption-full");
+            $detailDuration = $("<p>");
+            $detailDuration.html(jobs[id].duration);
+            $detailCompanyName = $("<h4>");
+            $detailCompanyName.text(jobs[id].position + " at " + jobs[id].companyName);
+            $detailCaption.append($detailCompanyName);
+            $detailCaption.append($detailDuration);
+            $detailThumbnailDiv.append($detailCaption);
+
+            //create the content
+            //$detailBulletList = $("<ul>");
+            for (i = 0; i < jobs[id].bullets.length; i++) {
+                //alert(jobs[id].bullets.length);
+                $detailBullet = $("<li>");
+                $detailBullet.css("text-align", "left");
+                $detailBullet.text(jobs[id].bullets[i]);
+                $detailCaption.append($detailBullet);
+                //$detailThumbnailDiv.append($detailBullet);
+            }
+            // $detailThumbnailDiv.append($detailBulletList);
+
+            //create the map
+            $detailMapDiv = $("<div>");
+            $detailMapDiv.css("width", "100%");
+            $detailMapDiv.css("height", "250px");
+            $detailMapDiv.css("margin-top", "1rem");
+            $detailMap = $("<iframe>");
+            $detailMap.attr("src", jobs[id].address);
+            $detailMap.css("width", "100%");
+            $detailMap.css("height", "100%");
+            $detailMap.css("border", "0");
+            $detailMapDiv.append($detailMap);
+            $detailCaption.append($detailMapDiv);
+
+        }
+        renderDetailViewItem(0);
+    </script>
+</body>
+
+</html>

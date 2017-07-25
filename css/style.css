@@ -1,0 +1,138 @@
+/*
+ * Base structure
+ */
+
+* {
+    font-weight: 300;
+}
+
+html,
+body {
+    background-color: #4871d1;
+    height: 100%;
+}
+
+body {
+    padding-top: 4.5rem;
+    color: #fff;
+    /*
+    -webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+hr {
+    border-top: 1px solid #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:focus,
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* Classes */
+
+.btn {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.bg-inverse {
+    background-color: rgb(34, 66, 140) !important;
+}
+
+img.img-rnd {
+    border-radius: 50%;
+    max-height: 125px;
+    border: 3px solid #fff;
+    margin: 0px 10px 0px 0px;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.btn {
+    color: #0b486b;
+}
+
+.info-toggle {
+    margin-bottom: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    /* Vertically center the text there */
+    /* background-color: #f5f5f5; */
+}
+
+.navbar-collapse {
+    text-align: center !important;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.container-fluid {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.navbar-toggler {
+    font-size: 1.75rem !important;
+}
+
+.navbar-inverse .navbar-toggler {
+    border-color: rgba(255,255,255,0);
+}
+
+.portfolio-item {
+    padding: 10px;
+    height: 100%;
+    border: solid 1px #ffffff;
+    height: 100%;
+    background-color: rgba(255,255,255,.1)
+}
+
+.portfolio-item-padding {
+    padding-top: 10px;
+}
+
+.content-l-align {
+    text-align:left;
+}
+
+/* Identifiers */
+
+#social-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-fluid {
+        padding-top: 2rem;
+        text-align: center;
+        width: 75%;
+    }
+}
